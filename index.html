@@ -17,40 +17,48 @@
 </head>
 
 <body>
+  
+  <table width="100%">
+    <tr height="100%">
+      <td width="50%">
+	<iframe width="100%" id="delivsource" name="delivsource" src="/_theme/theme.html"></iframe>
+      </td>
+      <td width="100%">
+	<iframe width="100%" id="delivtarget" name="delivtarget" src="/?deliv_notheme"></iframe>
+      </td>
+    </tr>
+  </table>
 
-    <iframe id="delivsource" name="delivsource" src="/?deliv_log&amp;deliv_notheme"></iframe>
-    <iframe id="delivtarget" name="delivtarget" src="/static/index.html?deliv_notheme"></iframe>
-    <iframe id="banjocontrolpanel" src="controlpanel.html"></iframe>
-    
-    <div id="inspectSourceElementDialog" title="Inspect Element">
-        <form>
-            <div>Current Element: <a href="#" id="currentElement"></a></div>
-            <div>Parent Element: <a href="#" id="parentElement"></a></div>
-            <div id="DOMtree"><div>  
+  <div id="controlpanel"></div>
+
+  <div id="inspectSourceElementDialog" title="Inspect Element">
+      <form>
+        <div>Current Element: <a href="#" id="currentElement"></a></div>
+        <div>Parent Element: <a href="#" id="parentElement"></a></div>
+        <div id="DOMtree">
+	  <div>  
             
             <fieldset>
-                <legend>Action to perform</legend>
-                <input type="radio" value="replace" name="action" id="replaceaction" checked="checked" /><label for="replaceaction">Replace</label><br />
-                <input type="radio" value="drop" name="action" id="dropaction" /><label for="dropaction">Drop</label><br />
-                <input type="radio" value="prepend" name="action"  id="prependaction" /><label for="prependaction">Prepend</label><br />
-                <input type="radio" value="append" name="action" id="appendaction" /><label for="appendaction">Append</label><br />
+              <legend>Action to perform</legend>
+              <input type="radio" value="replace" name="action" id="replaceaction" checked="checked" /><label for="replaceaction">Replace</label><br />
+              <input type="radio" value="drop" name="action" id="dropaction" /><label for="dropaction">Drop</label><br />
+              <input type="radio" value="prepend" name="action"  id="prependaction" /><label for="prependaction">Prepend</label><br />
+              <input type="radio" value="append" name="action" id="appendaction" /><label for="appendaction">Append</label><br />
             </fieldset>
             <input type="checkbox" name="children" id="sourcechildren" checked="checked" /><label for="sourcechildren">Children</label><br />
-
-        </form>
+	  </div>
+	</div>
+      </form>
     </div>
 
     <div id="inspectTargetElementDialog" title="Inspect Element">
-        <form>
-            <div>Current Element: <a href="#" id="currentElement"></a></div>
-            <div>Parent Element: <a href="#" id="parentElement"></a></div>        
-            <input type="checkbox" name="children" id="targetchildren" checked="checked" /><label for="sourcechildren">Children</label><br />
-
-        </form>
+      <form>
+        <div>Current Element: <a href="#" id="currentElement"></a></div>
+        <div>Parent Element: <a href="#" id="parentElement"></a></div>        
+        <input type="checkbox" name="children" id="targetchildren" checked="checked" /><label for="sourcechildren">Children</label><br />
+	
+      </form>
     </div>
-
-
-
 
 </body>
 </html>
