@@ -1,0 +1,82 @@
+body {
+  font-family: Times New Roman;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+pre {
+  background-color: lightgray;
+}
+
+div#deli-globalnav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #46ACE3;
+  text-align: center;
+  color: blue;
+}
+
+
+div#deli-globalnav h1 {
+  background: transparent;
+  border: none;
+  color: blue;
+}
+
+div#deli-colorbanner {
+  background-color: #C96369;
+  width: 100%;
+}
+
+div.entry h3 {
+  font-size: 2em;
+}
+
+div.entry {
+  border-bottom: 5px dotted black;
+}
+
+div#deli-globalnav div#deli-colorbanner a {
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-transform: uppercase;
+}
+
+div#deli-globalnav div#deli-colorbanner a:hover,
+div#deli-footer a:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+div#deli-sitenav {
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+
+div#deli-sitenav a {
+  background-color: #C96369;
+  border: none;
+  padding: 0.25em;
+  color: white;
+  display: block;
+}
+
+div#deli-content {
+  margin-left: 30%;
+  margin-right: 10%;
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-family:'Trebuchet MS',sans-serif;
+  text-decoration: underline;
+  font-size: 1.5em;
+  padding:3px 0 3px 10px;
+}

@@ -1,0 +1,31 @@
+<ruleset>
+
+  <server-settings>
+    <server>0.0.0.0:7000</server>
+    <execute-pyref>true</execute-pyref>
+    <dev-allow>
+      127.0.0.1
+    </dev-allow>
+    <dev-htpasswd>deliv-users.htpasswd</dev-htpasswd>
+  </server-settings>
+
+  <proxy path="/edit" class="notheme">
+    <dest href="{here}" />
+  </proxy>
+
+  <proxy path="/_theme">
+    <dest href="{here}/theme" />
+  </proxy>
+
+  <proxy path="/">
+    <response rewrite-links="1" />
+    <dest href="http://www.coactivate.org" /> 
+  </proxy>
+
+  <rule>
+    <theme href="/_theme/theme.html" /> 
+    <drop content="script" />
+    <replace content="children:#oc-content-container" theme="div#deli-content" />
+  </rule>
+
+</ruleset>
